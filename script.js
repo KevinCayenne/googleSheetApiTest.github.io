@@ -42,7 +42,10 @@ function SendData(){
                           "Password": document.getElementById("pwd").value,
                           "Name": document.getElementById("Name").value,  
                           "Phone": document.getElementById("PhoneNum").value,
-                          "Gmail": document.getElementById("email").value
+                          "Gmail": document.getElementById("email").value,
+                          "Year": d.getFullYear(),
+                          "Month": d.getMonth() + 1,
+                          "Date": d.getDate()
                       },
                       function (data) {
                           document.write("<div>"+data+"</div>");
