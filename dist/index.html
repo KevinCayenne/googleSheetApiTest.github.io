@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Login / Register testing</title>  
+  <link rel="stylesheet" href="./style.css">  
+</head>
+
+<body>
+
+  <!DOCTYPE html>
+<html>
+  <body>
+    <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>    
+
+  <h1>Login / Register testing</h1>
+      
+     <input class="change-btn" id = "login-btn" type='submit' onclick="TurnToLogin();" value = '登入'>
+     <input class="change-btn" id = "signup-btn" type='submit' onclick="TurnToRegister();" value='註冊'>
+    
+  <form class = "bg" id = "login" onsubmit = "Login_submit(); return false;">
+      <h2>會員登入</h2>
+      <div class = "inputtext">帳號 :</div>
+      <input type="text" id="IDInput" placeholder="請輸入帳號" onfocus="this.placeholder = ''" onblur="this.placeholder = '請輸入帳號'" required="required">
+      <div class = "inputtext">密碼 :</div>
+      <input type="password" id="pwdin" placeholder="請輸入6-20位密碼" onfocus="this.placeholder = ''" onblur="this.placeholder = '請輸入6-20位密碼'" required="required">
+      <br>
+      <input type="submit" id ="inputsub" value="登入"/>
+  </form>
+    
+  <form class = "bg" id ="register" onsubmit = "submit_form();">
+      <h2>會員註冊</h2>
+      <div class = "inputtext">設定帳號 :</div>
+      <input type="text" id="ID" placeholder="請設定帳號" onfocus="this.placeholder = ''" onblur="this.placeholder = '請設定帳號'" required="required">
+      <div class = "inputtext">設定密碼 :</div>
+      <input type="password" id="pwd" placeholder="請再次輸入6-20位密碼,至少包含一個大小寫英文字母" onfocus="this.placeholder = ''" onblur="this.placeholder = '請再次輸入6-20位密碼,至少包含一個大小寫英文字母'" required="required" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" onChange="checkPasswordMatch();">
+      <div class = "inputtext">確認密碼 :</div>
+      <input type="password" id="txtConfirmPassword" placeholder="請再次輸入6-20位密碼,至少包含一個大小寫英文字母" onfocus="this.placeholder = ''" onblur="this.placeholder = '請再次輸入6-20位密碼,至少包含一個大小寫英文字母'" required="required" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" onChange="checkPasswordMatch();">
+    
+      <p class="registrationFormAlert" id="divCheckPasswordMatch"> </div>
+      <div class = "inputtext">姓名 :</div>
+      <input type="text" id="Name" placeholder="請輸入姓名" onfocus="this.placeholder = ''" onblur="this.placeholder = '請輸入姓名'" required="required">
+      <div class = "inputtext">電話(手機) :</div>
+      <input type="text" id="PhoneNum" placeholder="請輸入電話(手機) ex: 0912345678" onfocus="this.placeholder = ''" onblur="this.placeholder = '請輸入電話(手機) ex: 0912345678'" required="required">
+      <div class = "inputtext">電子信箱(Gmail) :</div>
+      <input type="email" id="email" placeholder="請輸入電子信箱(Gmail) ex: abc@gmail.com" name ="email" onfocus="this.placeholder = ''" onblur="this.placeholder = '請輸入電子信箱(Gmail) ex: abc@gmail.com'" required="required">
+      <br>
+      <input type="submit" id ="inputsub" value="註冊"/>
+  </form>     
+</body>
+</html>
+    <script  src="./script.js"></script>
+</body>
+
+</html>
+

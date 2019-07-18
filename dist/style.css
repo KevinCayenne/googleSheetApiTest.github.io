@@ -1,0 +1,127 @@
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; }
+
+*{
+  font-family: 微軟正黑體;
+}
+
+body, html{
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+h1{
+  margin-top: 15px;
+  margin-bottom: 10px;
+  text-align: center;  
+}
+
+.change-btn {
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  height: 65px;
+  left: 30%;
+  position: relative;
+  border: none;
+  width: 20%;
+  text-align: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+  transition-duration: 0.5s;
+}
+
+#login-btn{
+  transform: translateX(0px) translateY(10px);
+  background-color: grey;
+}
+
+#login-btn:hover{
+  transform: translateX(0px) translateY(0px);
+}
+
+#signup-btn{
+  transform = translateX(0px) translateY(10px);
+  background-color: #97d64f;
+}
+
+#signup-btn:hover{
+  transform: translateX(0px) translateY(0px);
+}
+
+input[type = email] {
+  font-size: 15px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type = text] {
+  font-size: 15px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=password] {
+  font-size: 15px;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#inputsub {
+  font-weight: bold;
+  width: 100%;
+  background-color: #97d64f;
+  color: white;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+#inputsub:hover {
+  background-color: #A9C34B;
+}
+
+.bg {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 0px;
+  width: 40%;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+#register{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#login{
+  display: none;
+}
