@@ -125,7 +125,7 @@ input[type=password] {
   box-sizing: border-box;
 }
 
-#inputsub {
+.inputsub {
   font-weight: bold;
   width: 100%;
   background-color: #97d64f;
@@ -139,7 +139,7 @@ input[type=password] {
   transition-duration: 0.3s;
 }
 
-#inputsub:hover {
+.inputsub:hover {
   padding-top: 10px;
   background-color: #A9C34B;
 }
