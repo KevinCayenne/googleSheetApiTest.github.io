@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Login / Register testing</title>  
-  <link rel="stylesheet" href="./style.css">  
+  <link rel="stylesheet" href="./css/style.css">  
 </head>
 
 <body>
@@ -17,7 +17,7 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     </head>    
 
-  <div class = "bgimg">
+  <div class = "nobgimg">
        <input class="change-btn" id = "login-btn" type='submit' onclick="TurnToLogin();" value = '登入'>
        <input class="change-btn" id = "signup-btn" type='submit' onclick="TurnToRegister();" value='註冊'>
       
@@ -36,22 +36,22 @@
         <input type="text" id="ID" placeholder="請設定帳號" onfocus="this.placeholder = ''" onblur="this.placeholder = '請設定帳號'" required="required">
         <div class = "inputtext">設定密碼 :</div>
         <input type="password" id="pwd" placeholder="請再次輸入6-20位密碼,至少包含一個大小寫英文字母" onfocus="this.placeholder = ''" onblur="this.placeholder = '請再次輸入6-20位密碼,至少包含一個大小寫英文字母'" required="required" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" onChange="checkPasswordMatch();">
-        <div class = "inputtext">確認密碼 :</div>
-        <input type="password" id="txtConfirmPassword" placeholder="請再次輸入6-20位密碼,至少包含一個大小寫英文字母" onfocus="this.placeholder = ''" onblur="this.placeholder = '請再次輸入6-20位密碼,至少包含一個大小寫英文字母'" required="required" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" onChange="checkPasswordMatch();">
-      
-        <p class="registrationFormAlert" id="divCheckPasswordMatch"> 
+        <div class = "inputtext">確認密碼 : <span class="registrationFormAlert" id="divCheckPasswordMatch"> </span> </div> 
+        <input type="password" id="txtConfirmPassword" placeholder="請再次輸入6-20位密碼,至少包含一個大小寫英文字母" onfocus="this.placeholder = ''" onblur="this.placeholder = '請再次輸入6-20位密碼,至少包含一個大小寫英文字母'" required="required" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" onChange="checkPasswordMatch();">      
+        
+
         <div class = "inputtext">姓名 :</div>
         <input type="text" id="Name" placeholder="請輸入姓名" onfocus="this.placeholder = ''" onblur="this.placeholder = '請輸入姓名'" required="required">
         <div class = "inputtext">電話(手機) :</div>
         <input type="text" id="PhoneNum" placeholder="請輸入電話(手機) ex: 0912345678" onfocus="this.placeholder = ''" onblur="this.placeholder = '請輸入電話(手機) ex: 0912345678'" required="required">
         <div class = "inputtext">電子信箱(Gmail) :</div>
-        <input type="email" id="email" placeholder="請輸入電子信箱(Gmail) ex: abc@gmail.com" name ="email" onfocus="this.placeholder = ''" onblur="this.placeholder = '請輸入電子信箱(Gmail) ex: abc@gmail.com'" required="required">
+        <input type="email" id="email" placeholder="請輸入電子信箱(Gmail) ex: name@gmail.com" name ="email" onfocus="this.placeholder = ''" onblur="this.placeholder = '請輸入電子信箱(Gmail) ex: name@gmail.com'" required="required">
         <input type="submit" class ="inputsub" value="註冊"/>
     </form>  
   </div>   
 </body>
 </html>
-    <script  src="./script.js"></script>
+    <script  src="./js/script.js"></script>
 </body>
 
 </html>

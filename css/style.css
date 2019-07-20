@@ -13,6 +13,10 @@ body, html{
   margin: 0;
   padding: 0;
   position: relative;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .bgimg {
@@ -84,7 +88,7 @@ h2{
 }
 
 #signup-btn{
-  transform = translateX(0px) translateY(10px);
+  transform: translateX(0px) translateY(0px);
   background-color: #97d64f;
 }
 
@@ -131,7 +135,8 @@ input[type=password] {
   background-color: #97d64f;
   color: white;
   padding: 10px 20px;
-  margin: 12px 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -140,7 +145,6 @@ input[type=password] {
 }
 
 .inputsub:hover {
-  padding-top: 10px;
   background-color: #A9C34B;
 }
 

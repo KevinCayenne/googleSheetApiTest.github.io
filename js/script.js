@@ -29,9 +29,9 @@ function checkPasswordMatch() {
     var confirmPassword = $("#txtConfirmPassword").val();
 
     if (password != confirmPassword)
-        $("#divCheckPasswordMatch").html("<i class='material-icons' style='font-size:15px' >do_not_disturb_on</i> Passwords do not match!").css('color', 'red');
+        $("#divCheckPasswordMatch").html("<i class='material-icons' style='font-size:15px'>do_not_disturb_on</i> Passwords do not match!").css('color', 'red');
     else
-        $("#divCheckPasswordMatch").html("<p style ='color: green'><i class='material-icons' style='font-size:20px;color:green'>done_all</i> Passwords matching!</p>"); 
+        $("#divCheckPasswordMatch").html("<span style ='color: green'><i class='material-icons' style='font-size:20px;color:green'>done_all</i> Passwords matching!</span>"); 
 }
 
 function SendData(){
